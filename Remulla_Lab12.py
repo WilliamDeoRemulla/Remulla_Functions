@@ -4,19 +4,23 @@ pick = []
 print("Menu: ", food)
 
 def item():
-    choose = input("Choose item: ")
-    if choose == "bread":
-        pick.append(60)
-    elif choose == "cookie":
-        pick.append(20)
-    elif choose == "cake":
-        pick.append(1000)
-    elif choose == "chocolate":
-        pick.append(100)
-    elif choose == "donut":
-        pick.append(30)
-    elif choose == "sandwich":
-        pick.append(35)
+    print("Choose item/s. Type 'stop' to stop")
+    while True:
+        choose = input("item: ")
+        if choose == "bread":
+            pick.append(60)
+        elif choose == "cookie":
+            pick.append(20)
+        elif choose == "cake":
+            pick.append(1000)
+        elif choose == "chocolate":
+            pick.append(100)
+        elif choose == "donut":
+            pick.append(30)
+        elif choose == "sandwich":
+            pick.append(35)
+        elif choose == "stop":
+            break
 
 item()
 
